@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  status: false
+  comment: MyText
+  article_url: MyString
+  article_title: MyString
+  user_id: 1
+
+two:
+  status: false
+  comment: MyText
+  article_url: MyString
+  article_title: MyString
+  user_id: 1
