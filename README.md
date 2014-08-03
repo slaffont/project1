@@ -1,8 +1,8 @@
 Name: Sophie_Laffont
 Email: slaffont@gmail.com
 
-GitHub: https://github.com/slaffont/wdi_project_1
-Heroku: http://hidden-coast-5689.herokuapp.com/games/3
+
+Heroku: http://thawing-ridge-6481.herokuapp.com/
 
 Project Title: The Attentive Reader
 
