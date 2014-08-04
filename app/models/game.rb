@@ -2,7 +2,8 @@ class Game < ActiveRecord::Base
    has_many :photos
 
     def self.api_call
-        response = HTTParty.get("http://api.nytimes.com/svc/mostpopular/v2/mostemailed/all-sections/7.json?api-key=00b716ab322addf65b72cbfbb4384970:4:52836506")
+
+        response = HTTParty.get("http://api.nytimes.com/svc/mostpopular/v2/mostemailed/all-sections/7.json?api-key=#{Rails.application.secrets.nyt_api_key}")
 
         random_indices = []
         while random_indices.length < 3
