@@ -1,9 +1,17 @@
 
-<div class="game" style="text-align:center; margin-top:50px">
+<div class="game">
   <h1>The Attentive Reader</h1>
 
+
+
    <% if @image.nil? %>
-      <h2 style="margin-top:50px">Today's article is..."<%= @game.article_title %>"</h2>
+      <p class="article">Today's article is: "<%= @game.article_title %>"</p>
+
+ <p class="instructions">
+         Do you read The New York Times carefully or merely skim its contents?
+Let's see...</br>Click on the one image belonging to the article below.
+         <br>
+      </p>
 
       <% @game.photos.shuffle.each do |photo| %>
          <%= link_to image_tag(photo.image_url), {
@@ -13,16 +21,12 @@
          } %>
       <% end %>
 
-      <p style="margin-top:50px; font-size:12px; color:#cccccc">
-         Choose the image that goes with the article title.<br>
-         (only one is correct)
-      </p>
-   <% elsif @image.article_url == @game.article_url %>
-      <h1 style="color:rgb(255,0,0)">YOU WON!!!!!!</h1>
 
+   <% elsif @image.article_url == @game.article_url %>
+      <h1 class="result">Yes, you really are an attentive reader.</h1>
       <iframe src="<%= @game.article_url %>" width="1024" height="768"></iframe>
    <% else %>
-      <h1 style="color:rgb(255,0,0)">Read the paper more closely</h1>
+      <h1 class="result">Read the paper more closely.</h1>
       <iframe src="http://nytimes.com" width="1024" height="768"></iframe>
    <% end %>
 

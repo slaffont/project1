@@ -1,7 +1,10 @@
 body{
-background-color:#000000;
-color:#FFFFFF;
-font-family: 'Gilda Display', serif;
+background-color:#FFFFFF;
+color:#545454;
+font: 'Gilda Display', serif;
+ text-align:center;
+ margin-top:50px;
+ margin-bottom:50px;
 }
 
 img{
@@ -10,25 +13,47 @@ height: 200px;
 margin-left:50px;
 border: 2px solid;
 border-radius:25px;
-margin-top:50px;
+    color:#444141;
 }
 
 a{
  text-decoration: none;
- color:Red;
+ color:#545454;
 }
 
 h1{/* new york times title*/
-    color:#cccccc;
-   font-family: 'Gilda Display', serif;
+    color:#444141;
    font-size:54px;
+   margin-top: -40px;
+     font-weight:normal;
 }
 
-h2{
+.article{
+   font-weight:normal;
 font-size:24px;
- color:#d3d3d3;
+ color:#545454;
+ margin-top:100px;
+ margin-bottom: 50px;
+
 }
 
 #user_nav a{
-   font-size:12px;
+   font-size:14px;
+}
+
+.navbar-text{
+   text-align: left;
+}
+
+.instructions{
+color:#808080;
+   font-size:18px;
+   margin-top:100px;
+   margin-bottom:50px;
+}
+
+.result{
+   margin-top:50px;
+   color:red;
+      font-size:36px;
 }
